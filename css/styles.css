@@ -2,12 +2,14 @@
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
 }
 
 body {
   margin-top: 100px;
   margin-bottom: 20px;
-  font-family: sans-serif;
+  font-family: var(--default-font-family);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -36,9 +38,24 @@ h3 {
   text-align: center;
 }
 
+h4 {
+  font-size: 48px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font-family);
+}
+
 p {
   font-size: 18px;
   line-height: 1.5;
+}
+
+.logo {
+  max-height: 40px;
 }
 
 .navigation-links {
@@ -89,15 +106,6 @@ p {
   text-decoration: none;
 }
 
-.email-link:hover {
-  text-decoration: underline;
-}
-
-.container {
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
 .primary-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -129,6 +137,11 @@ p {
   .email-link {
     font-size: 22px;
   }
+
+  .primary-link {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
 }
 
 .fixed-top {
@@ -137,4 +150,60 @@ p {
   right: 0;
   left: 0;
   z-index: 1030;
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
+
+.social-links a:hover {
+  color: var(--secondary-color);
+  background: var(--primary-color);
+}
+
+.email-link:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+.btn-branding {
+  background: var(--primary-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+@media (max-width: 900px) {
+  h4 {
+    font-size: 26px;
+  }
 }
