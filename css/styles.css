@@ -148,7 +148,8 @@ a.nav-link {
   color: black !important;
 }
 
-a.nav-link:hover {
+a.nav-link:hover,
+nav li.active a {
   color: var(--primary-color) !important;
 }
 
