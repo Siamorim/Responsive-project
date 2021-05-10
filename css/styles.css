@@ -135,13 +135,13 @@ p {
     margin: 0 20px;
   }
 
-  .email-link {
-    font-size: 22px;
-  }
-
   .primary-link {
     margin-left: 70px;
     margin-right: 70px;
+  }
+
+  .text-center {
+    font-size: 20px;
   }
 }
 
