@@ -232,6 +232,11 @@ footer {
     font-size: 20px;
     margin: 8px 5px 0px;
   }
+
+  h5 {
+    margin: auto 5px;
+  }
+
   p {
     text-align: center;
   }
